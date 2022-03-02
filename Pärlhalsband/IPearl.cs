@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pärlhalsband
+namespace PearlNecklace
 {
 	public enum PearlColor {Black, White, Pink}
 	public enum PearlShape {Round, Tear}
@@ -16,7 +16,7 @@ namespace Pärlhalsband
 		public PearlColor Color { get; set; }
 		public PearlShape Shape { get; set; }
 		public PearlType Type{ get; set; }
-		public int PearlPrice { get; set; }
+		public int Price { get; }
 
 		void RandomInit();
 	}
