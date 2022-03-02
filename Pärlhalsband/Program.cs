@@ -13,8 +13,10 @@ foreach (var item in pearlBag)
     Console.WriteLine($"{item}\n");
 }
 
+
 var freshPearls = new List<Pearl>();
 List<Pearl> freshwaterPearls = pearlBag.FindAll(x => x.Type == PearlType.Freshwater);
+
 
 var freshCount = 0;
 foreach (var item in freshwaterPearls)
