@@ -32,3 +32,14 @@ foreach (var item in saltwaterPearls)
     saltCount++;
 }
 Console.WriteLine($"Amount of Saltwater Pearls: {saltCount}");
+
+var size = 10;
+var color = PearlColor.White;
+var shape = PearlShape.Tear;
+
+Console.WriteLine($"\nSearching for pearl with properties:\nSize: {size}\nColor: {color}\nShape: {shape}");
+var askedPearl = pearlBag.Where(x => x.Size == size)
+                         .Where(x => x.Color == color)
+                         .Where(x => x.Shape == shape);
+
+Console.WriteLine($"Found pearls: {askedPearl.Count()}");
