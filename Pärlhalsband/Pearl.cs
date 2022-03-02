@@ -12,6 +12,7 @@ namespace Pärlhalsband
 		public PearlColor Color { get; set; }
 		public PearlShape Shape { get; set; }
 		public PearlType Type { get; set; }
+		public int PearlPrice { get; set; }
 
 		public void RandomInit()
 		{
